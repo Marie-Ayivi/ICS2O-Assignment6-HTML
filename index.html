@@ -30,32 +30,32 @@ HST              13%</p>
   </body>
   <script>
   document.getElementById("button").addEventListener
-  ("click", myFunction)
- let size
- let topping
+  ("click", myFunction);
+ let size;
+ let topping;
  function myFunction() {
- size=document.getElementById("textbox").value
- topping=document.getElementById("textbox2").value
- if ((size=large)&(topping=1)) {
+ size=document.getElementById("textbox").value;
+ topping=document.getElementById("textbox2").value;
+ if ((size=="large")&&(topping==1)) {
  greeting="The subtotal is $7.00 and your total is $7.91";
- }else if ((size=large)&(topping=2)) {
+ }else if ((size=="large")&&(topping==2)) {
  greeting="The subtotal is $7.75 and your total is $8.76";  
- }else if ((size=large)&(topping=3)) {
+ }else if ((size=="large")&&(topping==3)) {
  greeting="The subtotal is $8.50 and your total is $9.60";    
- }else if ((size=large)&(topping=4)) {
+ }else if ((size=="large")&&(topping==4)) {
  greeting="The subtotal is $9.35 and your total is $10.57";    
- }else if ((size=extralarge)&(topping=1)) {
+ }else if ((size=="extralarge")&&(topping==1)) {
  greeting="The subtotal is $11.00 and your total is $12.43";    
- }else if ((size=extralarge)&(topping=2)) {
+ }else if ((size=="extralarge")&&(topping==2)) {
  greeting="The subtotal is $11.75 and your total is $13.28";
- }else if ((size=extralarge)&(topping=3)) {
+ }else if ((size=="extralarge")&&(topping==3)) {
  greeting="The subtotal is $12.50 and your total is $14.13";    
- }else if ((size=extralarge)&(topping=4)) {
+ }else if ((size="extralarge")&7(topping==4)) {
  greeting="The subtotal is $13.35 and $15.08";
  }else{
  greeting="Your order is not available";
  }
- document.getElementById("demo").innerHTML=greeting
+ document.getElementById("demo").innerHTML=greeting;
  }
  
   </script>
